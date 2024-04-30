@@ -1,24 +1,22 @@
 import SwiftUI
 
 struct ButtonView: View {
-    var body: some View {
-        ZStack {
-            Color.clear.opacity(0.2)
-                .ignoresSafeArea()
-            VStack {
-                Spacer()
-                HStack {
-                    Button(action: {
-                        //
-                    }) {
-                        Label("New Action", systemImage: "square.and.pencil")
-                            .foregroundColor(.white)
-                            .padding()
-                            .background(Color.indigo)
-                            .cornerRadius(30)
-                    }
-                }
-            }.padding(.bottom, 40)
-        }
+  var tappedAddContentButton: () -> Void
+  
+  var body: some View {
+    Button(action: {
+      tappedAddContentButton()
+    }) {
+      HStack{
+        Label("New Action", systemImage: "square.and.pencil")
+        Rectangle()
+          .frame(width: 1, height: 20)
+        Image(systemName: "chevron.up")
+      }
+      .foregroundColor(.white)
+      .padding()
+      .background(Color.indigo)
+      .clipShape(Capsule())
     }
+  }
 }

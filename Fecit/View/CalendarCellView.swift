@@ -1,54 +1,66 @@
 import SwiftUI
 
 struct CalendarCellView: View {
-    private var day: Int
-    private var isToday: Bool
-    private var isCurrentMonthDay: Bool
-    private var isSunday: Bool
-    private var weekday: Int
-    
-    private var textColor: Color {
-        if isCurrentMonthDay && isSunday {
-            return Color.red
-        } else if isCurrentMonthDay {
-            return Color.black
-        } else {
-            return Color.gray
-        }
-    }
-    
-    private var backgroundColor: Color {
-        if isToday {
-            return Color.indigo
-        } else {
-            return Color.white
-        }
-    }
-    
-    init(
-        day: Int,
-        isToday: Bool = false,
-        isCurrentMonthDay: Bool = true,
-        isSunday: Bool,
-        weekday: Int
-        
-    ) {
-        self.day = day
-        self.isToday = isToday
-        self.isCurrentMonthDay = isCurrentMonthDay
-        self.isSunday = isSunday
-        self.weekday = weekday 
-    }
-    
-    var body: some View {
-        VStack {
-            Circle()
-                .stroke(backgroundColor, lineWidth: 1.5)
-                .overlay(Text(String(day)))
-                .foregroundColor(textColor)
-            
+  private var day: Int
+  private var isToday: Bool
+  private var isCurrentMonthDay: Bool
+  private var isSunday: Bool
+  private var eventTitles: [String]?
+  private let color: [Color] = [.red, .orange, .yellow]
+  
+  init(
+    day: Int,
+    isToday: Bool = false,
+    isCurrentMonthDay: Bool = true,
+    isSunday: Bool,
+    eventsForDay: [String]? = nil
+  ) {
+    self.day = day
+    self.isToday = isToday
+    self.isCurrentMonthDay = isCurrentMonthDay
+    self.isSunday = isSunday
+    self.eventTitles = eventsForDay
+  }
+  
+  var body: some View {
+    VStack {
+      Text(String(day))
+        .font(.body)
+        .foregroundColor(isCurrentMonthDay ? (isSunday ? .red : .black) : .gray)
+        .padding(4)
+        .background(
+          Circle()
+            .fill(Date().today == day ? .blue.opacity(0.4) : .clear)
+        )
+      ZStack {
+        if let titles = eventTitles, !titles.isEmpty {
+          VStack {
+            ForEach(Array(titles.prefix(3).enumerated()), id: \.element) { (index, title ) in
+              Text(title)
+                .font(.caption)
+                .foregroundColor(color[index])
+                .padding(.horizontal, 5)
+                .padding(.vertical, 2)
+                .frame(maxWidth: .infinity)
+                .background(color[index].opacity(0.2))
+                .cornerRadius(8)
+            }
+            if titles.count > 3 {
+              Text("...")
+                .font(.caption)
+                .foregroundColor(.green)
+                .padding(.horizontal, 5)
+                .padding(.vertical, 2)
+                .frame(maxWidth: .infinity)
+                .background(Color.green.opacity(0.2))
+                .cornerRadius(8)
+            }
             Spacer()
+          }
         }
-        .frame(height: 80)
+      }
+      .frame(height: 100)
+      .frame(maxWidth: .infinity)
     }
+  }
 }
