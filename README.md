@@ -15,9 +15,10 @@ SwiftUI를 사용해서 일정을 관리할 수 있는 달력을 구현
 ## **📱 실행 화면(기능 설명)**
 |앱 진입 화면|오늘 날짜 확인|
 |:--------:|:--------:|
-|![Simulator Screenshot - iPhone 15 Pro - 2024-04-30 at 22.10.42](https://hackmd.io/_uploads/HJSZy_0b0.png)|![Simulator Screenshot - iPhone 15 Pro - 2024-04-30 at 22.11.03](https://hackmd.io/_uploads/SJR8kuRWA.png)|
+![Simulator Screenshot - iPhone 15 Pro - 2024-04-30 at 22 10 42](https://github.com/LeeSe0ngYe0n/fecit_calendar/assets/149786504/9ff91ba2-910f-487b-945e-65f91195079c)|![Simulator Screenshot - iPhone 15 Pro - 2024-04-30 at 22 11 03](https://github.com/LeeSe0ngYe0n/fecit_calendar/assets/149786504/804b6771-bbf0-4fa3-abe7-1f0fb7e3b854)|
 | **이벤트 추가 화면**|**이벤트 입력 시 확인 버튼**|
-|![Simulator Screenshot - iPhone 15 Pro - 2024-04-30 at 22.11.53](https://hackmd.io/_uploads/ry-xZuAb0.png)|![Simulator Screenshot - iPhone 15 Pro - 2024-04-30 at 22.12.06](https://hackmd.io/_uploads/ByPZ-dR-A.png)|
+![Simulator Screenshot - iPhone 15 Pro - 2024-04-30 at 22 11 53](https://github.com/LeeSe0ngYe0n/fecit_calendar/assets/149786504/508ecc93-7193-47b4-b997-eada754479c6)|![Simulator Screenshot - iPhone 15 Pro - 2024-04-30 at 22 12 06](https://github.com/LeeSe0ngYe0n/fecit_calendar/assets/149786504/767dc0b2-a807-41dd-9219-efd9435e1b1b)|
 | **이벤트 스택 화면**|**실행 화면**|
-|![Simulator Screenshot - iPhone 15 Pro - 2024-04-30 at 22.12.44](https://hackmd.io/_uploads/r1VqWdA-C.png)||
+|![Simulator Screenshot - iPhone 15 Pro - 2024-04-30 at 22 12 44](https://github.com/LeeSe0ngYe0n/fecit_calendar/assets/149786504/1282311c-7dc9-4d3c-b45b-ea6fd5d5d5f2)|![Simulator Screen Recording - iPhone 15 Pro - 2024-04-30 at 22 34 27](https://github.com/LeeSe0ngYe0n/fecit_calendar/assets/149786504/e6856e33-c636-46b5-b5e9-28e177e518d5)|
+
 ---
