@@ -11,4 +11,13 @@ SwiftUI를 사용해서 일정을 관리할 수 있는 달력을 구현
 - [ ]  **구현하지 못한 기능**
 - 캘린더의 날짜 클릭 시 해당 날짜가 눌렸는 표시하는 기능
 - 캘린더 무한 스크롤 기능
+
+## **📱 실행 화면(기능 설명)**
+|앱 진입 화면|오늘 날짜 확인|
+|:--------:|:--------:|
+|![Simulator Screenshot - iPhone 15 Pro - 2024-04-30 at 22.10.42](https://hackmd.io/_uploads/HJSZy_0b0.png)|![Simulator Screenshot - iPhone 15 Pro - 2024-04-30 at 22.11.03](https://hackmd.io/_uploads/SJR8kuRWA.png)|
+| **이벤트 추가 화면**|**이벤트 입력 시 확인 버튼**|
+|![Simulator Screenshot - iPhone 15 Pro - 2024-04-30 at 22.11.53](https://hackmd.io/_uploads/ry-xZuAb0.png)|![Simulator Screenshot - iPhone 15 Pro - 2024-04-30 at 22.12.06](https://hackmd.io/_uploads/ByPZ-dR-A.png)|
+| **이벤트 스택 화면**|**실행 화면**|
+|![Simulator Screenshot - iPhone 15 Pro - 2024-04-30 at 22.12.44](https://hackmd.io/_uploads/r1VqWdA-C.png)||
 ---
